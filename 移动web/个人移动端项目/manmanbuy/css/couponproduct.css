@@ -1,0 +1,120 @@
+*{
+  font-size: .1rem;
+}
+#box {
+  height: auto;
+  margin: 0 auto;  
+}
+nav {
+  width: 100%;
+  height: .44rem;
+  padding: .02rem;
+  font-size: .2rem;
+  text-align: center;
+  line-height: .44rem;
+  color: #8f9098;
+}
+section ul {
+  width: 100%;
+}
+section ul li {
+  width: 100%;
+  height: 1.5rem;
+  padding-left: 1.20rem ;
+  position: relative;
+  padding-top: .10rem;
+  border-bottom: 1px solid #cccc;
+}
+section ul li .s_l {
+  width: 1.00rem;
+  height: 1.20rem;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: .10rem;
+  line-height: 1.30rem;
+  padding: .10rem 0;
+}
+section ul li .s_l img {
+  width: 1.20rem;
+  height: 1.2rem;
+  display: block;
+  margin-top: .2.5rem;
+}
+section ul li .sr {
+  width: 100%;
+  padding-left: .10rem;
+  height: auto;
+  
+}
+section ul li .sr .r_top  {
+  font-size: .20rem;
+  text-align: justify;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;/*文字隐藏后添加省略号*/
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+
+}
+section ul li .sr .r_conter {
+  font-size: .15rem;
+  font-weight: bolder;
+}
+section ul li .sr .r_bottom {
+  position: absolute;
+  bottom: .25rem;
+  color: #EE7700;
+  font-size:.1.5rem;
+  line-clamp: 1;
+  overflow: hidden;
+  display: table-caption;
+}
+#box_img{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  background-color: rgb(19, 17, 17);
+  display: none;
+}
+#box_img div{
+    width: 3.00rem;
+    height: 3.00rem;
+    margin: 3rem auto;
+    font-size: 1rem;
+    position: relative;
+    color: white;
+}
+#box_img div span:first-child{
+    direction: block;
+    position: absolute;
+    top:50%;
+    left:-.5rem;
+    transform: translate(-100%,-50%) ;
+    z-index: 999;
+}
+#box_img div span:last-child{
+  direction: block;
+  position: absolute;
+  top:50%;
+  right: -.5rem;
+  transform: translate(100%,-50%) ;
+  text-align: right;
+  z-index: 999;  
+}
+#box_img div .img{
+  width: 100%;
+  height: 100%;
+}
+#box_img div .img img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+ transition: all 2s;
+}

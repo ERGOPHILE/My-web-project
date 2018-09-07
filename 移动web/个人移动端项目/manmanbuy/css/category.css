@@ -1,0 +1,54 @@
+#box {
+  background-color: #fff;
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+}
+nav .nav .navs {
+  width: 100%;
+  height: auto;
+}
+nav .nav .navs:first-child a {
+  border-radius: 10px 10px 0 0;
+}
+nav .nav .navs:last-child a {
+  border-radius: 0 0 10px 10px;
+}
+nav .nav .navs .shows a{
+  border-radius: 0 ;  
+}
+nav .nav .navs .title {
+  height: 0.4rem;
+  width: 100%;
+  text-align: left;
+  font-size: .15rem;
+  line-height: 0.4rem;
+  padding-left: .10rem;
+  display: block;
+  font-weight: bolder;
+  position: relative;
+  background-color: #ededed;
+  padding-left: .20rem;
+  border-bottom: 1px solid #ccc;
+  padding-right: .60rem;
+}
+nav .nav .navs ul {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+}
+nav .nav .navs ul li {
+  width: 33.3%;
+  height: .40rem;
+  float: left;
+}
+nav .nav .navs ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: .4rem;
+  font-size: .1rem;
+}

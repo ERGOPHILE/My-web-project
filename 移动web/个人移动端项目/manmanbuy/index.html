@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <!-- 字体库 <fa 指定字体  fa-wechat 指定的是具体哪个图标-->
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <!-- 字体库 -->
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body onselectstart = "return false" >
+    <!-- 大容器 -->
+    <div id="box">
+
+        <!-- 头部  -->
+        <header >
+            <div class="h_top">
+                <div class="ht_l fl">
+                    <a href="index.html">
+                        
+                        <img src="images/header_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="ht_r fr">
+                    <a href="index.html">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 搜索 -->
+            <div class="h_bottom ">
+                <div class="input">
+                    <input type="text" placeholder="请输入你想要比价的商品">
+                </div>
+                <div class="button">
+
+                    搜索
+
+                </div>
+            </div>
+        </header>
+        <!-- 导航栏 -->
+        <nav>
+            <ul>
+                <!-- <li>
+                    <a href="#">
+                        <img src="images/ic_search.png" alt="">
+                        <p>比价搜索</p>
+                    </a>
+                </li>              -->
+            </ul>
+        </nav>
+        <!-- 中间 -->
+        <section>
+            <div class="s_top">
+                <div class="st_l fl">
+                    <p>超值折扣推荐</p>
+                </div>
+                <div class="st_r ">
+                    <img src="images/more.png" alt="">
+                </div>
+            </div>
+            <div class="s_conter">
+                <ul>
+                    <!-- 坑 -->
+                </ul>
+            </div>
+            <div class="s_footer">
+                <a href="moneyctrl.html">更多优惠信息 》</a>
+            </div>
+        </section>
+        <!-- 底部 -->
+        <footer>
+            <div class="f_top">
+                <div class="ft_l ">
+                    <p>品牌排行</p>
+                </div>
+                <div class="ft_r ">
+                    <img src="images/more.png" alt="">
+                </div>
+            </div>
+            <div class="f_conter">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="zhece">注册</a>
+                <a href="#" class="f_db" id="btn_top">
+                    <img src="images/top.jpg" alt=""> 返回到顶部
+                </a>
+            </div>
+            <div class="f_bottom">            
+                    <a href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                    <p>m.manman.buy.com</p>
+
+            </div>
+        </footer>
+    </div>
+    <!-- 菜单栏 -->
+    <script type="text/html" id="n_tpl">
+            {{each result v i}}
+        
+            <li class="nav{{i==7?' more':''}}{{i>7?' hide':''}}" data-indexmenuid="{{ v.indexmenuId }}">
+            <a href="{{i===7?'javascript:':v.titlehref}}">
+                {{@v.img}}
+                <p>{{ v.name }}</p>
+            </a>
+            </li>
+            {{/each}}
+    </script>
+    <!-- 商品列表 -->
+    <script type="text/html" id="s_tpl">
+        {{each result v i}}
+         <li>
+                <a href="moneyproduct.html?productId={{v.productId}}" >
+                    <div class="c_l">
+                       {{@v.productImgSm}}
+                    </div>
+                    <div class="c_r">
+                        <!-- 商品介绍 -->
+                        <div class="c_rt">
+                            <p>
+                               {{v.productName}}  <span>{{v.productPinkage}}</span>
+                            </p>
+                        </div>
+                        <!-- 日期时间 -->
+                        <div class="c_rb">
+                            <span class="fl">{{v.productFrom}}  |  {{v.productTime}}</span>
+                            <span class="fr fa fa-user-circle-o my">{{v.productComCount.replace("有","").replace("人评论","")}}</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+    {{/each}}
+    </script>
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>

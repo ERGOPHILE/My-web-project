@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>详情</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+    <!-- 大容器 -->
+    <div id="box">
+            
+   <!-- 头部  -->
+    <header>
+          <div class="h_top">
+                 <div class="ht_l fl">
+                   <a href="index.html">
+                        <img src="images/header_logo.png" alt="">
+                   </a>
+                 </div>
+                 <div class="ht_r fr">
+                    <a href="#">
+                         <img src="images/header_app.png" alt="">
+                    </a>
+                 </div>
+          </div>
+          <!-- 搜索 -->
+          <div class="h_bottom ">
+                   <div class="input">
+                       <input type="text" placeholder="请输入你想要比价的商品">
+                   </div>
+                   <div class="button">
+                        
+                            搜索
+                       
+                   </div>
+          </div>
+    </header>
+    <!-- 导航栏 -->
+    <!-- 导航栏 -->
+    <nav>
+            <div class="n_l">
+                 <a href="index.html">首页 ></a>
+                <a href="#" id="name">电视 ></a>
+                <a href="javascipt:"  id="title"> </a>                
+            </div>
+            <div class="n_r">
+                    筛选
+            </div>
+        </nav>
+
+    <!-- 内容 -->
+     <section>
+           <div class="s_top">
+                    <!-- <div class="t_top">
+                        <h3>乐视tv</h3>
+                        <img src="images/gengduo.png" alt="">
+                        <button >
+                            收藏
+                        </button>
+                    </div>  
+                     <div class="t_center">
+                           <span class="count">比价购买</span>
+                           <span>产品参数</span>
+                           <span>评价 (2322)</span>                           
+                     </div>  
+                     <div class="t_bottom">
+
+                     </div>       -->
+           </div>
+           <div class="s_center">
+            * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+           </div>
+           <div class="s_bottom">
+                <div class="b_top">
+                        网友评价
+                    </div>
+                 <ul>
+                     <li>                                      
+                                <div class="fl">
+                                 <span  class="s_l"> aaa</span>
+                                 <span  class="s_r"> 2015</span>                                 
+                                </div >
+                                <div  class="fr">
+                                       <p >2016/14/44</p>
+                                       <p >购买</p>
+                                </div >
+                        <div class="b_bottom">
+                            sadasdasdsdasdas
+                        </div>
+                     </li>
+                 </ul>
+           </div>
+     </section>
+    <!-- 底部 -->
+    <footer>
+        <div class="f_top">
+            <div >
+                查看更多评价
+            </div>
+            
+        </div>
+        <div class="f_conter">
+            <a href="#" class="login">登录</a>
+            <a href="#" class="zhece">注册</a>
+            <a href="javascript:" class="f_db" id="btn_top">
+                <img src="images/top.jpg" alt="" > 返回到顶部
+            </a>
+        </div>
+        <div class="f_bottom">
+            <div>
+                <a href="#">手机app下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#">--掌上比价平台</a>
+                <p>m.manman.buy.com</p>
+            </div>
+            
+        </div>
+    </footer>
+   </div>
+   <!-- 渲染详情 -->
+   <script type="text/html" id="list_tpl">
+    {{each result v i}}
+               <div class="t_top"data-id="{{v.productId}}" data-categoryId = "{{v.categoryId}}">
+                        <h1>{{v.productName}}</h1>
+                         {{@v.productImg}}
+                        <button >
+                            收藏
+                        </button>
+                    </div>  
+                     <div class="t_center">
+                           <span class="count">比价购买</span>
+                           <span>产品参数</span>
+                           <span>评价 (2322)</span>                           
+                     </div>  
+                     <div class="t_bottom">
+                          {{@v.bjShop}}
+                     </div> 
+        {{/each}}  
+   </script>
+   <!-- //内容 -->
+ 
+   <script type="text/html" id="cotent_tpl">
+            {{each result v i}}
+                 <li>                     
+                        <div class="b_conter">
+                                <div class="fl">
+                                 {{v.comName}}
+                                </div >
+                                <div  class="fr">
+                                       <p >{{v.comTime}}</p>
+                                       <p >{{v.comFrom}}</p>
+                                </div >
+                        </div>
+                        <div class="b_bottom">
+                           {{v.comContent}}
+                        </div>
+                     </li>
+            {{/each}} 
+   </script> 
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>    
+    <script src="js/common.js"></script>
+    <script src="js/bijia.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 凑单品</title>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+
+<body>
+    <!-- 大容器 -->
+    <div id="box">
+        <!-- 头部  -->
+        <header class="m_header btn_bottom">
+            <a href="javascript:history.go(-1)" class="prev">
+                    <span class="fa fa-arrow-left"></span>
+            </a>
+            <h3 class="m_center">凑单品</h3>
+            <a href="index.html" class="app">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </header>
+        <!-- 导航栏 -->
+        <nav>
+            <div class="n_top">
+                <div class="n_l">
+                    <ul>
+                        <li>
+                            <a href="#" data-li="name">京东
+                                <span class="fa fa-sort-asc icon"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-li="city">
+                                华北
+                            <span class="fa fa-sort-asc"></span>                                                                                          
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" data-li="pice">全部价格
+                            <span class="fa fa-sort-asc"></span>                            
+                                
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="n_r fa fa-cc-discover"></div>
+            </div>
+            <div class="select">
+                <div class="name ">
+                    <ul>
+                        <!-- <li><a href="#">11</a></li>                            -->
+                    </ul>
+                </div>
+                <div class="city">
+                    <ul>
+                        <!-- <li><a href="#">11</a></li>                            -->
+                    </ul>
+                </div>
+                <div class="pice ">
+                    <ul>
+                        <li>
+                            <a href="#">全部价格</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 中间 -->
+        <section>
+            <ul>
+                <!-- <li>                    
+                        <img src="images/categorylist.jpg" alt="">
+                        <p >sdasdasdasd</p>
+                        <div >
+                             <span class="pice fl">12.2</span>
+                             <span class="btn_y fr">
+                                 去凑单
+                             </span>
+                        </div>
+                 </li> -->
+            </ul>
+        </section>
+        <!-- 底部 -->
+        <footer>
+            <div class="f_conter">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="zhece">注册</a>
+                <a href="javascript" class="f_db" id="btn_top">
+                    <img src="images/top.jpg" alt=""> 返回到顶部
+                </a>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <a href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                    <p>m.manman.buy.com</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- 下拉店铺信息渲染 -->
+    <script type="text/html" id="name_tpl">
+       {{each result v i}}
+              <li><a href="#" data-shopid="{{v.shopId}}">{{v.shopName}}</a></li>                                     
+       {{/each}}
+   </script>
+    <!-- 下拉地址信息渲染 -->
+    <script type="text/html" id="city_tpl">
+        {{each result v i}}
+               <li><a href="#" data-areaid="{{v.areaId}}">{{v.areaName}}</a></li>                                     
+        {{/each}}
+    </script>
+    <!-- 商品信息渲染 -->
+    <script type="text/html" id="content_tpl">
+        {{each result v i}}
+            <li>                    
+                    <img src="{{v.productImg}}" alt="">
+                    <p>{{v.productName}}</p>
+                    <div >
+                        <span class="pice fl">{{v.productPrice}}</span>
+                        <span class="btn_y fr">
+                            去凑单
+                        </span>
+                    </div>
+            </li>                       
+        {{/each}}
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/gsproduct.js"></script>
+</body>
+
+</html>

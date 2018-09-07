@@ -1,0 +1,388 @@
+/*css基础样式*/
+/*css样式重置*/
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  /*所有盒子采用内减模式*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*在移动去除默认点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+//让所有图片的文字
+img{
+    font-size:0.5rem;
+}
+body {
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+  background: #f1f1f1;
+  
+  /*后面都是备胎*/
+}
+#box{
+    background: #f1f1f1;
+    background-color: white;
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    height:auto;
+}
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+}
+/*废物利用*/
+em,
+i {
+  font-style: normal;
+}
+/*公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+//头部  header复用
+header{
+  width: 100%;
+  height: 2.56rem;
+  .h_top{
+      width: 100%;
+      height:1.20rem;
+      background-color: #ff841d;
+      padding-right: .80rem;
+      position: relative;    
+      .ht_l{
+              width: 100%;               
+              height: 100%;
+              
+          a{
+              width: 100%;
+              height: 100%;
+              display: block;
+              padding: .22rem;   
+              position: relative;
+              img{
+                max-height: 25px;
+                overflow: hidden;
+                position: absolute;
+                top:15px;
+              }          
+          }                
+      }
+      .ht_r{
+          width: .80rem;
+          height: 100%; 
+          position: absolute;  
+          right:10px;   
+                
+          a{
+           width: 100%;
+           height: 100%;
+           display: block;
+           margin-right: .14rem;
+       
+           img{
+               max-width: 34px;
+           }
+       }         
+      }
+  }
+  .h_bottom{
+      background-color: #fff;
+      height: 1.3rem;
+      display: flex;
+      justify-content: space-between;
+      padding: .20rem .22rem;
+      
+      .input{
+           padding-top:.02rem;
+           width: 95%;
+          input{
+           font-size: .20rem;
+           width: 100%;
+           height: .7rem;
+           background-color: #f1f1f1;
+           border-radius:30px;
+           padding: .15rem .5rem;
+           display: block;
+          }
+      }
+      .button{             
+              width: 1.6rem;
+              height: .70rem;
+              border-radius:30px;
+              background-color: #ff841d;   
+              text-align: center;
+              line-height: .60rem;
+              font-size: .30rem;
+              color: white;   
+              margin-left: 10px;       
+      }
+  }
+}
+//底部复用
+//底部
+footer{
+  width: 100%;
+  height: 4.10rem;
+  background-color: #fff;
+  div{
+   height: 0.90rem;
+    
+  }
+  .f_top{
+      background-color: #ffa32a;
+      padding-right: .50rem;
+      padding: .10rem 0;
+      position: relative;
+      padding-right: .50rem;
+      div{
+       position: absolute               
+      }
+      .ft_l{
+          font-size: .40rem;
+          color: white;
+          padding: .08rem .10rem;
+      }
+      .ft_r{
+          width: .60rem;
+          right: .90rem;
+       
+         img{
+             width: 20px;
+             height: 20px;
+             right: 0;
+             top: 0.15rem;
+            position: absolute;
+             
+         }
+      }
+  }
+  .f_conter{
+    display: flex;
+    text-align: center;
+    height: 0.8rem;
+    line-height: .80rem;
+    font-size:.3rem;
+    
+    .login,.zhece{
+        width: 30%;     
+        height: 100%;
+        display: block;
+        border: 1px solid #bbbbbb;
+        border-left: none;  
+      
+   }
+   .f_db{
+       width: 40%;
+       height: 100%;
+       border: 1px solid #bbbbbb;
+       border-left: none; 
+       border-right: none; 
+       img{
+          width: .30rem;
+          height: .30rem;
+          transform: translateY(-0px);
+       }
+        
+   }
+  }
+  .f_bottom{
+   color: #687178;
+   text-align: center;
+   vertical-align: middle;
+      p{
+        font-size: .20rem;
+          
+      }
+     a{
+         font-size: .30rem;
+         &:nth-child(1){
+             color: red;
+         }
+         &:nth-child(2){
+           color: black;
+       }
+     }
+  }
+}
+//省钱头部复用
+.m_header{
+     width: 100%;
+     height: 1.2rem;
+     background-color: #ff841d;
+     padding:0 .80rem;
+     position: relative;
+     .prev{
+       position: absolute;
+       left: 0;
+       top: 0;
+       width: .50rem;
+       height: 100%;
+        padding: .15rem .10rem;
+        background-clip: content-box;
+        overflow: hidden;
+     }
+     .m_center{
+          width: 100%;
+          height: 100%;
+          color: white;
+          line-height:1.2rem;
+          text-align: center;
+          font-size:.50rem; 
+     }
+     .app{
+       width: .90rem;
+       height: 100%;
+       position: absolute;
+       right: 0;
+       top: 0;
+       padding: .10rem;
+       line-height:1.4rem;       
+       img{
+         width: 100%;
+       }
+     }
+}
+//分页按钮复用
+  //底部
+  footer{
+    .ftop{
+        width: 100%;
+        height: .70rem;
+        display: flex;
+        div{
+            width: 33.3%;
+            height: 100%;
+            padding: .10rem .50rem;
+            button{
+                width: 1.40rem;
+                height: 5.0rem;
+                border-radius: .10px;
+                font-size:.20rem;
+            }
+            span, ul li{
+                width: 1.40rem;
+                height: 5.0rem;
+                border-radius: .10px;
+                font-size:.20rem;
+                display: block;
+                border: 1rem solid #cccc;
+                text-align: center;
+                line-height: .50rem;
+               
+            }
+            .btn_page{
+                position: relative;
+            }
+            ul{
+                display: none;
+                position: absolute;
+                background-color: #fff;
+            }
+        }
+    }
+}
+//下箭头
+.down::after{
+  content: "";
+  position: absolute;
+  right:.10rem;
+  top:.04rem;
+  height: .30rem;
+  width: .30rem;
+  background-image: url("../images/icon_bar.png");
+  background-position: -332px 14px;
+  padding: .10rem;
+  background-clip: content-box;
+  } 
+  //按钮背景渐变
+  .btn_b{
+    background-image: radial-gradient(white, #ccc);
+    box-shadow: 0 3px 1px #ccc;
+    border-radius: 5px;
+    font-size: .25rem;
+    text-align: center;
+  } 
+ .btn_y{
+     height: .50rem;
+     width: 100%;
+     background-color: #ff9000;
+     color: white;
+     font-size: .25rem;
+     border-radius:5px;
+     text-align: center;
+     line-height: .50rem;
+     margin: .20rem 0;
+ }
+ //三角形
+ .san::before{
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: .29rem;
+    top: -.08rem;
+    border-bottom: .08rem solid #e7e7e7;
+    border-left: .08rem solid transparent;
+    border-right: .08rem solid transparent;
+ }
+ 

@@ -1,0 +1,24 @@
+section {
+  width: 100%;
+  margin: .20rem 0;
+}
+section div {
+  width: 3.00rem;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+section div a {
+  display: block;
+  height: .45rem;
+  padding: .13rem .08rem ;
+  margin: .05rem .05rem  0 0 ;
+  background: #f4f4f4;
+  border: 1px solid #bfbfbf;
+  font-size: .15rem;
+}
+section div a img {
+  width: .16rem;
+  height: .16rem;
+  margin-right: .10rem;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 肯德基优惠券</title>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+</head>
+
+<body>
+    <!-- 大容器 -->
+    <div id="box">
+         <!-- 头部  -->
+         <header class="m_header">
+                <a href="javascript:history.go(-1)" class="prev">
+                        <span class="fa fa-arrow-left"></span>                    
+                </a>
+                <h3 class="m_center">优惠券</h3>
+                <a href="index.html" class="app">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </header>
+            <!-- 导航栏 -->
+          <!-- 中间 -->
+          <nav>
+            --点餐前出示手机中的优惠券，即可享受优惠--
+          </nav>
+        <section>
+        <ul>
+            <!-- <li>
+                 <div class="s_l">
+                       <img src="images/ic_trend.png" alt="">
+                 </div>
+                 <div class="sr">
+                      <p class="r_top">asdsa </p>
+                      <p class="r_conter">sdsa</p>
+                      <p class="r_bottom">2014</p>
+                 </div>
+            </li> -->
+        </ul>
+               
+        </section>
+        <!-- 底部 -->
+        <footer>
+            <div class="f_conter">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="zhece">注册</a>
+                <a href="#" class="f_db">
+                    <img src="images/top.jpg" alt=""> 返回到顶部
+                </a>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <a href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                    <p>m.manman.buy.com</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- <!-- //轮播图 -模态框-> -->
+    <div id="box_img">
+            <div>
+                <span class="fa fa-angle-double-left" id="prev"></span>
+                   <div class="img"></div>
+                <span class="fa fa-angle-double-right" id="next"></span>                
+            </div>
+    </div>
+    <!-- 标题渲染 -->
+    <script type="text/html" id="tpl">
+       {{each result v i}}
+            <li>
+                    <div class="s_l">
+                        {{@v.couponProductImg}}
+                    </div>
+                    <div class="sr">
+                        <p class="r_top">{{v.couponProductName}}</p>
+                        <p class="r_conter">{{v.couponProductPrice}}</p>
+                        <p class="r_bottom">{{v.couponProductTime}}</p>
+                    </div>
+            </li>
+       {{/each}}
+   </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/couponproduct.js"></script>
+</body>
+
+</html>

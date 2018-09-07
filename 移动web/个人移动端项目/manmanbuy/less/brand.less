@@ -1,0 +1,189 @@
+#box{
+    height: auto;
+    }
+    //面包屑导航
+    .list{
+        width: 100%;
+        height: 50px;
+        font-size:17px;
+        padding-left:20px;
+        line-height: 50px;
+        background-image:linear-gradient(rgb(219, 214, 214),rgba(255, 251, 251, 0.8),rgb(219, 214, 214));
+        border-bottom: 3px solid rgb(206, 204, 204);
+        span{
+            margin: 0 10px;
+        }
+    }
+    .text{
+        color:#9a4101;
+        width: 100%;
+        height: 50px;
+        border: 2px solid rgb(206, 204, 204);    
+        margin: 20px 0;
+        font-size:17px;
+        border-left: none;
+        border-right: none;
+        line-height: 50px;  
+        background-color: #eee; 
+      padding-left: 20px;
+    }
+    nav{
+        margin: 20px 0;    
+        background-color: white;
+        .nav{
+            li{
+                width: 100%;
+                height: 65px;
+                padding: 10px;            
+                border-bottom: 1px solid #e7e7e7;    
+                background-image: url(../images/arrow-right.svg);
+                background-repeat: no-repeat;
+                background-size: 20px 20px;
+                background-position: right center;  
+                &:nth-child(n+4) a{
+                     span{
+                       background-color: #c9c9c9;
+                     }
+                }
+                &:nth-child(1) a{
+                      span{
+                        background-color: red;
+
+                      }
+                }
+                &:nth-child(2) a{
+                    span{
+                      background-color: #ff9314;
+
+                    }
+              }
+              &:nth-child(3) a{
+                span{
+                  background-color: #8adf5b;
+
+                }
+          }
+            }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    display: block;
+                    display: flex;
+                   
+                    h1{
+                        margin: 0;
+                    }
+                    span{
+                        background-color: red;
+                        width: 20px;
+                        height: 20px;
+                        color:white;
+                        display: inline-block;
+                        text-align: center;
+                        line-height: 20px;
+                        margin-right: 10px;
+                    }
+                    div{
+                        margin: -4px 0;
+                        p{
+                            color:#cccc;
+                        }
+                    }
+                }
+            }
+        .n_list{
+            width: 100%;
+            li{
+                padding: 10px;
+                a{
+                    width: 100%;
+                    height: 118px;
+                    position: relative;  
+                    display: block; 
+                    padding-left: 100px; 
+                    .img{
+                        width: 110px;
+                        position: absolute;
+                        vertical-align: middle;                                            
+                        left: 0;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            
+                        }
+                    }
+                    .list_r{
+                        width: 100%;
+                        margin-left: 10px;
+                        .pice{
+                            margin:20px  20px 0  0;
+                            display: block;
+                            color: red;
+                            font-size:20px;
+                            
+                        }
+                        p{
+                            display: flex;
+                            color: #a1a1a1;
+                            font-size:15px;
+                            span{
+                                display: block;
+                                margin-top: 20px;
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            }
+            .comments{
+                width: 100%;                 
+                ul{
+                    li{
+                       width: 100%; 
+                       padding: 10px;
+                       margin: 10px 0;
+                       .co_top{
+                            position: relative;
+                             width: 100%;
+                             height: 100px;
+                             padding-left: 100px;
+                             padding-bottom: 10px;
+                             .l_img{
+                               position: absolute;
+                               left: 0;
+                               img{
+                                   width: 100px;
+                                   height: 100px;
+                               }                            
+                             }
+                             .l_p{
+                                width: 100%;
+                                height: 100%;
+                                padding-left: 20px;
+                                font-size:20px;
+                            }
+                       }
+                       .co_botom{
+                           margin: 20px;
+                           padding-right: 10px;
+                           background-color: #f8f8f8;
+                           margin-right: 0;
+                           border: 1px solid #e7e7e7;
+                           position: relative;
+                           div:first-child{
+                               margin: 0;
+                           }
+                          div{
+                               margin: 10px 20px;
+                               display: block;
+                               line-height:30px;
+                               text-indent:2em;
+                               font-family: "正楷"
+                           }
+                       }
+                    }
+                }
+            }
+        }
+    

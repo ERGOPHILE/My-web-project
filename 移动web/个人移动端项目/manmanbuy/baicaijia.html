@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 买买买-白菜价</title>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/mui/css/mui.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/baicaijia.css">
+</head>
+
+<body>
+    <!-- 大容器 -->
+    <div id="box">
+        <!-- 头部  -->
+        <header class="m_header">
+            <a href="javascript:history.go(-1)" class="prev">
+                <span class="fa fa-arrow-left"></span>
+            </a>
+            <h3 class="m_center">白菜价-淘宝内部券</h3>
+            <a href="index.html" class="app">
+                <img src="images/header_app.png" alt="">
+            </a>
+        </header>
+        <!-- 导航栏 -->
+
+
+        <nav>
+                <!--这里放置真实显示的DOM内容-->    
+            <div class="n_title ">
+                <ul>
+                    <!-- <li class="count">
+                                    <a href="#">全部</a>
+                                </li> -->
+                </ul>
+                <span class="icon fa fa-exchange"></span>
+            </div>
+            <ul class="content">
+                <!-- <li>
+                  <div class="n_img">
+                      <img src="images/haitao.png" alt="">
+                  </div>
+                  <div class="n_r">
+                        <div class="r_top">
+                             <p>西域美农新疆特产五星和田红枣250g*2
+                                <span class="pice">444</span>
+                            </p>
+                        </div>
+                        <div class="r_center">
+                            <p> 
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </p>
+                        </div>
+                        <div class="r_bottom">
+                           <p class="fl">  sdasd</p>
+                           <p class="fr">asdasd</p>
+                        </div>
+                  </div>                 -->
+                </li>
+            </ul>
+        </nav>
+        <!-- 底部 -->
+        <footer>
+            <div class="f_conter">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="zhece">注册</a>
+                <a href="javascript:" class="f_db" id="btn_top">
+                    <img src="images/top.jpg" alt=""> 返回到顶部
+                </a>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <a href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                    <p>m.manman.buy.com</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <!-- 标题渲染 -->
+    <script type="text/html" id="title_tpl">
+       {{each result v i}}
+            <li class="{{i===0?'count':''}}">
+                    <a href="#" data-id="{{v.titleId}}">{{v.title}}</a>
+             </li>
+       {{/each}}
+   </script>
+    <!-- 内容渲染 -->
+    <script type="text/html" id="content_tpl">
+        {{each result v i}}
+        <li>
+                <div class="n_img">
+                   {{@v.productImg}}
+                </div>
+                <div class="n_r">
+                      <div class="r_top">
+                           <p>
+                                {{@v.productName}}
+                          </p>
+                          <span class="pice">{{@v.productPrice}}</span>
+                      </div>
+                      <div class="r_center">
+                            {{@v.productCouponRemain}}
+                      </div>
+                      <div class="r_bottom">
+                         <p class="fl">  {{@v.productCoupon}}</p>
+                         <p class="fr">{{@v.productHref}}</p>
+                      </div>
+                </div>            
+        {{/each}}
+    </script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="lib/IScroll/iscroll.js"></script>
+    <script src="lib/mui/js/mui.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/baicaijia.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>品牌详情</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/comparison.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+
+<body>
+    <!-- 大容器 -->
+    <div id="box">
+
+        <!-- 头部  -->
+        <header>
+            <div class="h_top">
+                <div class="ht_l fl">
+                    <a href="index.html">
+                        <img src="images/header_logo.png" alt="">
+                    </a>
+                </div>
+                <div class="ht_r fr">
+                    <a href="#">
+                        <img src="images/header_app.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 搜索 -->
+            <div class="h_bottom ">
+                <div class="input">
+                    <input type="text" placeholder="请输入你想要比价的商品">
+                </div>
+                <div class="button">
+                    搜索
+                </div>
+            </div>
+        </header>
+        <!-- 导航栏 -->
+
+        <div class="list">
+            <a href="index.html"></a>首页
+            <span>></span>
+            <a href="category.html">全部分类</a>
+            <span>></span>
+        </div>
+        <div class="text">
+            平板电视哪个牌子好
+        </div>
+        <nav>
+            <ul class="nav">
+                <!-- <li>
+                       <a href="#">
+                            <span>1</span>
+                            <div>
+                                <h1>扇形电视</h1>
+                                <p>asdasda</p>
+                            </div>
+                       </a>
+                   </li> -->
+            </ul>
+            <div class="text">
+                平板电视产品销量排行
+            </div>
+            <ul class="n_list">
+                <!-- <li>
+                     <a href="#">
+                         <div class="img">
+                                <img src="images/gengduo.png" alt="">
+                         </div>
+                         <div class="list_r">
+                             <h1>asads</h1>
+                              <span class="pice">12.55</span>
+                              <p>
+                                  <span>asas</span><span>sasa</span>
+                              </p>
+                         </div>
+                     </a>
+                 </li> -->
+            </ul>
+            <div class="comments">
+                <ul>
+                    <!-- <li>
+                        <div class="co_top">
+                            <div class="l_img">
+                                <img src="images/gengduo.png" alt="">
+                            </div>
+                            <div class="l_p">
+                                sdsadsadsadsad
+                            </div>
+                        </div>
+                        <div class="co_botom">
+                                 <div class="clearfix">
+                                        <span class="fl">***1</span>
+                                        <span class="fr">2</span>
+                                    </div>
+                                <div>sadasdsa</div>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+        <!-- 底部 -->
+        <footer>
+            <div class="f_top">
+                <div class="ft_l ">
+                    <p>品牌排行</p>
+                </div>
+                <div class="ft_r ">
+                    <img src="images/more.png" alt="">
+                </div>
+            </div>
+            <div class="f_conter">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="zhece">注册</a>
+                <a href="#" class="f_db">
+                    <img src="images/top.jpg" alt=""> 返回到顶部
+                </a>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <a href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                    <p>m.manman.buy.com</p>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+
+    <!-- //商品分类排行渲染 -->
+    <script type="text/html" id="list_tpl"> 
+        {{each result v i}}               
+             <li >
+                    <a href="productlist.html?categoryId={{v.categoryId}}" data-id="{{v.brandTitleId}}">
+                        <span>{{i +1}}</span>
+                        <div>
+                            <h1>{{v.brandName}}</h1>
+                            <p>{{v.brandInfo}}</p>
+                        </div>
+                    </a>
+                </li>
+        {{/each}}
+   </script>
+    <!-- //商品列表渲染 -->
+    <script type="text/html" id="content_tpl">
+    
+    {{each result v i}}
+      <li data-id="{{v.productId}}" data-img=" {{v.productImg}}" data-title="{{v.productName}}">
+            <a href="#">
+                <div class="img">
+                       {{@v.productImg}}
+                </div>
+                <div class="list_r">
+                    <h1>{{v.productName}}</h1>
+                     <span class="pice">{{v.productPrice}}</span>
+                     <p>
+                         <span>{{v.productQuote}}</span><span>{{v.productCom}}</span>
+                     </p>
+                </div>
+            </a>
+        </li>
+    {{/each}}
+
+    </script>
+  <!-- //商品评论渲染 -->
+  <script type="text/html" id="comments_tpl">  
+    {{each result v i}}
+       <li>
+            <div class="co_top">
+                <div class="l_img">
+                    <img src="images/gengduo.png" alt="">
+                </div>
+                <div class="l_p">
+                    sdsadsadsadsad
+                </div>
+            </div>
+            <div class="co_botom san">
+                     <div class="clearfix">
+                            <span class="fl">{{v.comName}}</span>
+                            <span class="fr">{{v.comTime}}</span>
+                        </div>
+                    <div>{{v.comContent}}</div>
+            </div>
+        </li>
+    {{/each}}
+
+    </script>
+    
+    <!-- <script src="js/rem.js"></script> -->
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/brand.js"></script>
+
+</body>
+
+</html>

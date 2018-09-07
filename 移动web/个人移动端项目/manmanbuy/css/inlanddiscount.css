@@ -1,0 +1,39 @@
+#box {
+  height: auto;
+}
+section ul {
+  padding: .20rem 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+section ul li {
+  width: 50%;
+  border: 1px solid #eeeeee;
+  font-size: .17rem;
+  padding: .1rem;
+}
+section ul li:hover{
+  border: 1px solid rgb(184, 13, 13);
+}
+section ul li img {
+  width: 1.40rem;
+  display: block;
+  margin: .20rem auto;
+  font-size:.1rem;
+}
+section ul li .name {
+  font-size: .2rem;
+  font-weight: bolder;
+}
+section ul li .pice {
+  color: #ff841d;
+  margin: 10px 0;
+  font-size:.1rem;
+}
+section ul li .tiele {
+  color: #a3abb0;
+  font-size:.1rem;  
+}
+section ul li .tiele span {
+  margin: 10px ;
+}

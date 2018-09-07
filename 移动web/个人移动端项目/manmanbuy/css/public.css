@@ -1,0 +1,400 @@
+/*css基础样式*/
+/*css样式重置*/
+body,
+div,
+ul,
+li,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea,
+select,
+p,
+dl,
+dt,
+dd,
+a,
+img,
+button,
+form,
+table,
+th,
+tr,
+td,
+tbody,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section {
+  margin: 0;
+  padding: 0;
+  /*所有盒子采用内减模式*/
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  /*在移动去除默认点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  font-size: 0.5rem;
+}
+body {
+  font-family: "Microsoft Yahei", Arial, sans-serif;
+  background: #f1f1f1;
+  /*后面都是备胎*/
+}
+#box {
+  background: #f1f1f1;
+  background-color: white;
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a,
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+input {
+  border: none;
+  outline: none;
+}
+/*废物利用*/
+em,
+i {
+  font-style: normal;
+}
+/*公共样式*/
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+header {
+  width: 100%;
+  height:1.1rem;
+}
+header .h_top {
+  width: 100%;
+  height: .5rem;
+  background-color: #ff841d;
+  padding-right: .80rem;
+  position: relative;
+}
+header .h_top .ht_l {
+  width: 100%;
+  height: 100%;
+}
+header .h_top .ht_l a {
+  width: 100%;
+  height: 100%;
+  display: block;
+ padding:  0.1rem;
+ position: relative;
+}
+header .h_top .ht_l a img {
+  max-height: .25rem;
+  overflow: hidden;
+ position: absolute;
+ top: .12rem;
+ 
+
+}
+header .h_top .ht_r {
+  width: .80rem;
+  height: 100%;
+  position: absolute;
+  right: .40rem;
+}
+header .h_top .ht_r a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-right: .14rem;
+}
+header .h_top .ht_r a img {
+  max-width: .34rem;
+  line-height: 0;
+  position: absolute;
+  right:0;
+  top:.1rem;
+}
+header .h_bottom {
+  background-color: #fff;
+  height: .6rem;
+  display: flex;
+  justify-content: space-between;
+  padding: .15rem .15rem;
+}
+header .h_bottom .input {
+  padding-top: .02rem;
+  width: 95%;
+}
+header .h_bottom .input input {
+  font-size: .13rem;
+  width: 100%;
+  height: .3rem;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+  padding: .15rem .2rem;
+  display: block;
+  line-height: .3rem;
+}
+header .h_bottom .button {
+  width: .63rem;
+  height: .30rem;
+  border-radius: 30px;
+  background-color: #ff841d;
+  text-align: center;
+  line-height: .30rem;
+  font-size: .15rem;
+  color: white;
+  margin-left: 10px;
+}
+footer {
+  width: 100%;
+  height:1.3rem;
+  background-color: #EFEFEF;
+}
+footer div {
+  height: 0.35rem;
+}
+footer .f_top {
+  background-color: #ffa32a;
+  padding: .04rem 0;
+  position: relative;
+  padding-right: .50rem;
+
+}
+footer .f_top div {
+  position: absolute;
+}
+footer .f_top .ft_l {
+  font-size: .20rem;
+  color: white;
+  padding-left: .2rem;
+}
+footer .f_top .ft_r {
+  width: .60rem;
+  right: .20rem;
+}
+footer .f_top .ft_r img {
+  width: .20rem;
+  height: .20rem;
+  right: 0;
+  top: 0.04rem;
+  position: absolute;
+}
+footer .f_conter {
+  display: flex;
+  text-align: center;
+  height: 0.3rem;
+  line-height: .30rem;
+  font-size: .1rem;
+}
+footer .f_conter .login,
+footer .f_conter .zhece {
+  width: 30%;
+  height: 100%;
+  display: block;
+  border: 1px solid #bbbbbb;
+  border-left: none;
+}
+footer .f_conter .f_db {
+  width: 40%;
+  height: 100%;
+  border: 1px solid #bbbbbb;
+  border-left: none;
+  border-right: none;
+}
+footer .f_conter .f_db img {
+  width: .10rem;
+  height: .10rem;
+  transform: translateY(0px);
+}
+footer .f_bottom {
+  color: #687178;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0.1rem;
+  font-size:.1rem;
+  margin-top: .2rem;
+}
+footer .f_bottom p {
+  font-size: .10rem;
+  margin-top: .1rem;
+}
+footer .f_bottom a {
+  font-size: .10rem;
+}
+footer .f_bottom a:nth-child(1) {
+  color: red;
+}
+footer .f_bottom a:nth-child(2) {
+  color: black;
+}
+.m_header {
+  width: 100%;
+  height: .5rem;
+  background-color: #ff841d;
+  padding: 0 .10rem;
+  position: relative;
+}
+.m_header .prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: .90rem;
+  height: 100%;
+  padding: .15rem .30rem;
+  background-clip: content-box;
+  overflow: hidden;
+}
+.m_header .prev  span{
+  line-height: .2rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+  font-size:.20rem;
+  color:white;
+}
+.m_header .m_center {
+  width: 100%;
+  height: 100%;
+  color: white;
+  line-height: .5rem;
+  text-align: center;
+  font-size: .2rem;
+}
+.m_header .app {
+  width: .40rem;
+  height: 100%;
+  position: absolute;
+  right:.30rem;
+  top: .04rem;
+  line-height: .5rem;
+}
+.m_header .app img {
+  display: block;
+  width: 0.4rem;
+  height: 0.4rem;
+}
+footer .ftop {
+  width: 100%;
+  height: .5rem;
+  display: flex;
+  line-height: 0;
+  background-color: white;
+}
+footer .ftop div {
+  width: 33.3%;
+  height: 100%;
+  /* padding: .08rem 0; */
+  text-align: center;
+  /* margin-top: -.85rem;   */
+}
+
+footer .ftop div button {
+  width: .8rem;
+  height: 0.33rem;
+  border-radius: 5px;
+  font-size: .15rem;
+  box-shadow: 0 .01rem .02rem #888;
+  border-radius: .05rem;
+  background-color: #d0d0d0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+}
+footer .ftop div .btn_page,
+footer .ftop div ul li {
+  width: .80rem;
+  height: 0.32rem;
+  font-size: .15rem;
+  display: block;
+  box-shadow: 0 .01rem .02rem #888;
+  border-radius: .05rem;
+  background-color: #d0d0d0;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#d7d7d7), to(#f5f5f5));
+  text-align: center;
+  line-height: .32rem;
+  margin: 0 auto;  
+}
+footer .ftop div .btn_page {
+  position: relative;
+}
+footer .ftop div ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+ 
+}
+
+.down::after {
+  content: "";
+  position: absolute;
+  right: .10rem;
+  top: .04rem;
+  height: .30rem;
+  width: .30rem;
+  background-image: url("../images/icon_bar.png");
+  background-position: -332px 14px;
+  padding: .10rem;
+  background-clip: content-box;
+}
+.btn_b {
+  background-image: radial-gradient(white, #ccc);
+  box-shadow: 0 3px 1px #ccc;
+  border-radius: 5px;
+  font-size: .25rem;
+  text-align: center;
+}
+.btn_y {
+  height: .50rem;
+  width: 100%;
+  background-color: #ff9000;
+  color: white;
+  font-size: .25rem;
+  border-radius: 5px;
+  text-align: center;
+  line-height: .50rem;
+  margin: .20rem 0;
+}
+.san::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: .29rem;
+  top: -0.08rem;
+  border-bottom: .08rem solid #e7e7e7;
+  border-left: .08rem solid transparent;
+  border-right: .08rem solid transparent;
+}

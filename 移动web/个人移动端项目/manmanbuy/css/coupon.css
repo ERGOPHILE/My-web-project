@@ -1,0 +1,26 @@
+.m_header {
+  background-color: #f4483e;
+}
+section {
+  margin-bottom: 30px;
+}
+section ul {
+  display: flex;
+}
+section ul li {
+  width: 2.25rem;
+  height: 2.00rem;
+  text-align: center;
+  padding: .10rem .20rem;
+}
+section ul li a {
+  width: .60rem;
+  height: .70rem;
+}
+section ul li a img {
+  width: 1rem;
+  height:1rem;
+}
+section ul li a p{
+  font-size: .35rem;
+}

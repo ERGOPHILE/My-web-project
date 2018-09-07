@@ -1,0 +1,174 @@
+*{
+  font-size: .2rem;
+}
+#box {
+  height: auto;
+}
+.list {
+  width: 100%;
+  height: .50rem;
+  font-size:.17rem;
+  padding-left: .20rem;
+  line-height: .50rem;
+  background-image: linear-gradient(#dbd6d6, rgba(255, 251, 251, 0.8), #dbd6d6);
+  border-bottom: 3px solid #cecccc;
+}
+.list span {
+  margin: 0 .10rem;
+}
+.text {
+  color: #9a4101;
+  width: 100%;
+  height: .50rem;
+  border: 2px solid #cecccc;
+  margin: .20rem 0;
+  font-size: .17rem;
+  border-left: none;
+  border-right: none;
+  line-height: .50rem;
+  background-color: #eee;
+  padding-left: .20rem;
+}
+nav {
+  margin: .20rem 0;
+  background-color: white;
+}
+nav .nav li {
+  width: 100%;
+  height: .65rem;
+  padding: .10rem;
+  border-bottom: 1px solid #e7e7e7;
+  background-image: url(../images/arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: .20rem .20rem;
+  background-position: right center;
+}
+nav .nav li:nth-child(n+4) a span {
+  background-color: #c9c9c9;
+}
+nav .nav li:nth-child(1) a span {
+  background-color: red;
+}
+nav .nav li:nth-child(2) a span {
+  background-color: #ff9314;
+}
+nav .nav li:nth-child(3) a span {
+  background-color: #8adf5b;
+}
+nav .nav a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  display: flex;
+}
+nav .nav a h1 {
+  margin: 0 10px;
+}
+nav .nav a span {
+  background-color: red;
+  width: .20rem;
+  height: .20rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  line-height: .20rem;
+  margin-right: .10rem;
+}
+nav .nav a div {
+  margin: -4px 0;
+}
+nav .nav a div p {
+  color: #cccc;
+  font-size: .1rem;
+  margin-top: .1rem;
+}
+nav .n_list {
+  width: 100%;
+}
+nav .n_list li {
+  padding: .10rem;
+}
+nav .n_list li a {
+  width: 100%;
+  height: 1.18rem;
+  position: relative;
+  display: block;
+  padding-left: 1.00rem;
+}
+nav .n_list li a .img {
+  width: 1.10rem;
+  position: absolute;
+  vertical-align: middle;
+  left: 0;
+}
+nav .n_list li a .img img {
+  width: 1.00rem;
+  height: 1.00rem;
+}
+nav .n_list li a .list_r {
+  width: 100%;
+  margin-left: .10rem;
+}
+nav .n_list li a .list_r .pice {
+  margin: .20rem  .20rem 0  0;
+  display: block;
+  color: red;
+  font-size: .20rem;
+}
+nav .n_list li a .list_r p {
+  display: flex;
+  color: #a1a1a1;
+  font-size: .15rem;
+}
+nav .n_list li a .list_r p span {
+  display: block;
+  margin-top: .20rem;
+  margin-right: .20rem;
+}
+nav .comments {
+  width: 100%;
+}
+nav .comments ul li {
+  width: 100%;
+  padding: .10rem;
+  margin: .10rem 0;
+}
+nav .comments ul li .co_top {
+  position: relative;
+  width: 100%;
+  height: 1.00rem;
+  padding-left: .100rem;
+  padding-bottom: .10rem;
+}
+nav .comments ul li .co_top .l_img {
+  position: absolute;
+  left: 0;
+}
+nav .comments ul li .co_top .l_img img {
+  width: 1.00rem;
+  height: 1.00rem;
+}
+nav .comments ul li .co_top .l_p {
+  width: 100%;
+  height: 100%;
+  padding-left: .20rem;
+  font-size: .20rem;
+}
+nav .comments ul li .co_botom {
+  margin: .20rem;
+  padding-right: .10rem;
+  background-color: #f8f8f8;
+  margin-right: 0;
+  border: 1px solid #e7e7e7;
+  position: relative;
+}
+nav .comments ul li .co_botom div:first-child {
+  margin: 0;
+}
+nav .comments ul li .co_botom div {
+  margin: .10rem .20rem;
+  display: block;
+  line-height: .30rem;
+  text-indent: 2px;
+  font-family: "正楷";
+}

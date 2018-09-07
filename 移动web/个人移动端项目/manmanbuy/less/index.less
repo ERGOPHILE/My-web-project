@@ -1,0 +1,148 @@
+//主体
+#box{
+    background-color: #cccc;
+    width: 100%;
+    min-width: 320px;
+    max-width: 750px;
+    margin: 0 auto;
+    height: auto;
+   }
+   
+   //导航栏 nav
+   nav{
+       width: 100%;
+       background-color: #fff;
+       padding: .40rem 0;
+       margin: .20rem 0;
+       .hide{
+        display: none;
+      }
+       ul {          
+           display: flex;
+           flex-wrap: wrap;
+           li{
+               width: 25%;
+               height: 1.80rem;
+               text-align: center;
+               padding: .30rem 0;
+               margin-bottom: .20rem;
+               font-size:.20rem;
+              a:hover p{
+                   color:red;
+               }
+               img{
+                   width: 1.00rem;
+                   height: 1.00rem;
+                   margin-bottom: .05rem;
+               }
+           }
+       }
+   }
+   //中间
+   section{
+    background-color: #fff;
+       .s_top{
+           width: 100%;
+           height: .90rem;
+           padding: .10rem .20rem;
+           background-color: #ff9e20;
+           padding-right: .50rem;
+           position: relative;       
+           .st_l{
+               width: 100%;
+               height: 100%; 
+               font-size: .40rem;
+               color:white;
+               vertical-align: middle;
+               line-height: 0.7rem;
+           }
+           .st_r{
+               position: absolute;
+               right: .10rem;
+               height: 100%; 
+               line-height: 15px;   
+               vertical-align: middle;            
+               img{
+                   max-width: 20px;
+               }
+           }
+       }
+       .s_conter{
+           background-color: #cccc;
+           ul{
+               li{
+                   height: 2.60rem;
+                   width: 100%;
+                   margin-bottom: .02rem;
+                   position: relative;
+                   padding-left:2.30rem;
+                   background-color: #fff;
+                  
+                   .c_l{
+                       position: absolute;
+                       width: 2.30rem;
+                       height: 100%;
+                       background-color: #fff;
+                       left: 0;
+                       padding: .20rem;
+                       img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                   }
+                   .c_r{
+                       width: 100%;
+                       height: 2.00rem;
+                       position: relative;
+                       div{
+                        width: 100%;
+                        position: absolute;
+                       }
+                       .c_rt{                         
+                           top:0;
+                        padding: .27rem .10rem; 
+                        font-size:.25rem;
+                        span{
+                            color: #ff592a;
+                        }                                                 
+                       }
+                       .c_rb{                      
+                        bottom: 0;
+                        padding: 0 .10rem;
+                        span{
+                            color: #adaead;
+                            font-size:.20rem;
+                        }
+                       }
+                   }
+               }
+           }
+       }
+.s_footer{
+           width: 100%;
+           height:1.20rem;
+           padding: .25rem;
+           a{
+               display: block;
+               border-radius: 4px;
+               width: 100%;
+               height: 100%;
+               border: 1px solid #ccc;
+               text-align: center;
+               line-height: .7rem;
+              font-size: .20rem;
+              font-weight: bolder;
+              &:hover{
+                color:red;
+              }
+           }
+       }
+   }
+   
+//字体
+ .my{
+  font-size: .20rem;
+  letter-spacing:.10rem;
+  vertical-align: middle;
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+#box {
+  height: auto;
+}
+.list {
+  width: 100%;
+  height: .50rem;
+  font-size: .17rem;
+  padding-left: .20rem;
+  line-height: .50rem;
+  background-image: linear-gradient(#dbd6d6, rgba(255, 251, 251, 0.8), #dbd6d6);
+  border-bottom: .03rem solid #cecccc;
+}
+.list span {
+  margin: 0 .10rem;
+}
+.text {
+  color: #9a4101;
+  width: 100%;
+  height: .50rem;
+  border: .02rem solid #cecccc;
+  margin: .20rem 0;
+  font-size: .17rem;
+  padding-left: .20rem;
+  line-height: .50rem;
+  background-color: #eee;
+}
+nav {
+  margin: .20rem;
+  background-color: white;
+}
+

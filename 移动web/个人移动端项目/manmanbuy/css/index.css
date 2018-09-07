@@ -1,0 +1,149 @@
+#box {
+  background-color: #cccc;
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  height: auto;
+}
+nav {
+  width: 100%;
+  background-color: #fff;
+  padding: .10rem 0;
+  margin: .10rem 0;
+}
+nav .hide {
+  display: none;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav ul li {
+  width: 25%;
+  height: .9rem;
+  text-align: center;
+
+  margin-bottom: .20rem;
+  font-size: .10rem;
+}
+nav ul li a:hover p {
+  color: red;
+}
+nav ul li img{
+  transition: all 1s;
+}
+nav ul li:hover img{
+  transform: rotate(360deg);
+}
+nav ul li img {
+  width: .5rem;
+  height: .5rem;
+  margin-bottom: .05rem;
+}
+section {
+  background-color: #fff;
+}
+section .s_top {
+  width: 100%;
+  height: .35rem;
+  background-color: #ff9e20;
+  padding-right: .50rem;
+  position: relative;
+}
+section .s_top .st_l {
+  width: 100%;
+  height: 100%;
+  font-size: .20rem;
+  color: white;
+  vertical-align: middle;
+  line-height: 0.35rem;
+  padding-left: .2rem;
+}
+section .s_top .st_r {
+  position: absolute;
+  right: .10rem;
+  height: 100%;
+  line-height: 0x;
+  vertical-align: middle;
+}
+section .s_top .st_r img {
+  max-width: 20px;
+  position: absolute;
+  right:.2rem;
+  top: .07rem;
+}
+section .s_conter {
+  background-color: #cccc;
+}
+section .s_conter ul li {
+  height: auto;
+  width: 100%;
+  height: 1.29rem;
+  margin-bottom: .02rem;
+  padding-top: .10rem;
+  position: relative;
+  padding-left: 1.1rem;
+  background-color: #fff;
+}
+section .s_conter ul li .c_l {
+  position: absolute;
+  width: 2.30rem;
+  height: 1rem;
+  background-color: #fff;
+  left: 0;
+}
+section .s_conter ul li .c_l img {
+  max-width: 1rem;
+  height: 1rem; 
+}
+section .s_conter ul li .c_r {
+  width: 100%;
+  height: 1.00rem;
+  position: relative;
+}
+section .s_conter ul li .c_r div {
+  width: 100%;
+  position: absolute;
+}
+section .s_conter ul li .c_r .c_rt {
+  top: 0;
+  font-size: .15rem;
+}
+section .s_conter ul li .c_r .c_rt span {
+  color: #ff592a;
+}
+section .s_conter ul li .c_r .c_rb {
+  bottom: 0;
+  padding: 0 .10rem;
+}
+section .s_conter ul li .c_r .c_rb span {
+  color: #adaead;
+  font-size: .1rem;
+}
+section .s_footer {
+  width: 100%;
+  height: .32rem;
+  margin-bottom: .01rem;
+}
+section .s_footer a {
+  display: block;
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  border: .01rem solid #ccc;
+  text-align: center;
+  line-height: .32rem;
+  font-size: .10rem;
+  font-weight: bolder;
+ 
+}
+section .s_footer a:hover {
+  color: red;
+}
+.my {
+  font-size: .20rem;
+  letter-spacing: .10rem;
+  vertical-align: middle;
+  text-align: center;
+}

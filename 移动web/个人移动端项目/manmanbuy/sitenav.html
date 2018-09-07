@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> 商城导航</title>
+    <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+</head>
+
+<body>
+    <!-- 大容器 -->
+    <div id="box">
+         <!-- 头部  -->
+         <header class="m_header btn_bottom">
+                <a href="javascript:history.go(-1)" class="prev">
+                        <span class="fa fa-arrow-left"></span>                                   
+                </a>
+                <h3 class="m_center">商城导航</h3>
+                <a href="index.html" class="app">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </header>
+          <!-- 中间 -->
+        <section>
+             <div>                
+                   
+                    <!-- <a href="#"><img src="images/c1.png" alt="">  京东</a>
+                    <a href="#"><img src="images/c1.png" alt="">  京东</a>    -->
+             </div>                    
+                   
+        </section>
+        <!-- 底部 -->
+        <footer>
+            <div class="f_conter">
+                <a href="#" class="login">登录</a>
+                <a href="#" class="zhece">注册</a>
+                <a href="#" class="f_db">
+                    <img src="images/top.jpg" alt=""> 返回到顶部
+                </a>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <a href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    <a href="#">--掌上比价平台</a>
+                    <p>m.manman.buy.com</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- 下拉店铺信息渲染 -->
+    <script type="text/html" id="tpl">
+        {{each result v i}}
+            <a href="{{v.navHref}}" data-navId = "{{v.navId}}"><img src="{{v.navImg}}" alt="">{{v.navTitle}}</a> 
+        {{/each}}
+   </script>
+    
+    <script src="lib/artTemplate/template-web.js"></script>
+    <script src="lib/jq/jquery-1.12.4.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/sitenav.js"></script>
+</body>
+
+</html>
