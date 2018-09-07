@@ -1,0 +1,111 @@
+                .nav_box
+			    { 
+			    	width: 1420px;
+			    	height: 140px;
+			    	background-color: #363636;
+			    	margin: 100px auto;
+			    	display: flex;
+			    	
+			    }
+			    .nav_box_1
+			    {   
+			    	margin-top: 40px;
+			    	margin-left:200px;
+			    	width: 200px;
+			    	height: 60px;
+			    	background: url(../img/pos_logo.png) no-repeat;
+			    	
+			    }
+			    .nav_box_2
+			    {  
+			    	margin-left:90px;
+			    	width: 700px;
+			    	height: 140px;
+			    	display: flex;
+			    	line-height: 137px;
+			    	text-align: center;
+			    }
+			    .nav_box_2 a
+			    { 
+			    	margin-top: 7px;
+			    	width:100px;
+			    	height:133px;
+			    	color: #bababa;
+			        display: block;
+			        border-right: 1px solid  #262626;
+			        font-size: 20px;
+			    	}
+			    	.nav_box_2 a:hover 
+			    	{
+			    		margin-top: -1px;
+			    		height:133px;
+			    		background-color:#616161 ;
+			    		color: #ea7526;
+			    		border-top: 7px solid #EA7526;
+			    		line-height: 140px;
+			    	}
+			    .nav_box_3
+			    {
+			    	margin-left:130px;
+			    	margin-top: -20px;
+			    	width:100px ;
+			    	height:40px;
+			    	text-align: center;
+			    	line-height: 40px;
+			    	color: white;
+			    	background-color: #e80f32;
+			    }
+			  .header_box
+			  {
+			  	margin: -100px auto;
+			  	width: 1000px;
+			  	height: 450px;
+			  	background-color: white;
+			  }
+			  .header_box1 
+			   {
+			    padding-top: 30px;
+			    margin-left: 20px;
+			   	width: 960px;
+			   	height:340px;
+			   }
+			 .header_box1  img:hover
+			    {
+			    	display: block;			      
+			    	transition: all 2s;
+			    }
+			     #header_box2
+			   {
+			   	 margin: 10px auto;
+			   	 width:330px;
+			   	 height:60px;
+			   	 display: flex;
+			   }
+			    #header_box2 .header_box2_box
+			    {       
+			    	width:80px;
+			   	    height:20px;
+			   	    background: white;
+			   	    margin-top: -50px;
+			   	    margin-right: 10px;
+			   	    border-radius: 25px;
+			   	    z-index: 999;
+			    }
+			    
+			     footer
+                     {
+                     	width: 960px;
+                     	height:140px;
+                     	background: #363636;
+                     	text-align: center;
+                     	margin: 0 auto;
+                     	margin-top: 120px;
+                     	padding: 20px;
+                     }
+                      footer p
+                      {
+                      
+                      	margin-top: 20px;
+                      	 color: #ffffff;
+                
+                      }

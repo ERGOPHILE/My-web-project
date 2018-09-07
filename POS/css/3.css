@@ -1,0 +1,150 @@
+            *
+            {
+            	margin: 0;
+            	padding: 0;
+            }
+           
+            .sectioin_box1
+            {
+            margin: 0 auto;
+            margin-top: 60px;
+            width: 1000px;
+           	height:530px;
+           	display: flex;
+           	background-color: white;
+           	margin-bottom: 60px;
+            }
+           .section_right_box
+           {
+           	margin-top: -30px;
+           	width: 600px;
+           	height:380px;
+           	color: #707070;
+           }
+            .section_right_box  .section_right_box1
+            {
+            	display: flex;
+            	width:600px;
+           		height:140px;
+           		justify-content:  space-between;
+           		
+            }
+            .section_right_box  .section_right_box1 div
+            {
+            	width:145px;
+           		height:140px;
+            }
+            .section_right_box  .section_right_box1 div:nth-child(1)
+            {
+            	background: url(../img/pos_3.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box1 div:nth-child(1) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .section_right_box  .section_right_box1 div:nth-child(2)
+            {
+            	background: url(../img/pos_4.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box1 div:nth-child(2) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .section_right_box  .section_right_box1 div:nth-child(3)
+            {
+            	background: url(../img/pos_5.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box1 div:nth-child(3) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .section_right_box  .section_right_box1 div:nth-child(4)
+            {
+            	background: url(../img/pos_6.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box1 div:nth-child(4) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+            .section_right_box  .section_right_box2
+            {   
+            	margin-top: 30px;
+            	display: flex;
+            	width:600px;
+           		height:140px;
+           		justify-content:  space-between;
+           		
+            }
+            .section_right_box  .section_right_box2 div
+            {
+            	width:145px;
+           		height:140px;
+           		background-color: pink;
+            }
+            .section_right_box  .section_right_box2 div:nth-child(1)
+            {
+            	background: url(../img/pos_3.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box2 div:nth-child(1) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .section_right_box  .section_right_box2 div:nth-child(2)
+            {
+            	background: url(../img/pos_4.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box2 div:nth-child(2) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .section_right_box  .section_right_box2 div:nth-child(3)
+            {
+            	background: url(../img/pos_5.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box2 div:nth-child(3) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .section_right_box  .section_right_box2 div:nth-child(4)
+            {
+            	background: url(../img/pos_6.png) no-repeat; 
+            }
+             .section_right_box  .section_right_box2 div:nth-child(4) span
+             {
+             	display: block;
+             	margin-top: 120px;
+             }
+             .sectioin_right_yeshu
+             {
+             	margin: 0 auto;
+             	display: flex;
+             }
+             button
+             {
+                margin-left: 10px;
+             	border-radius: 10px 10px 10px 10px;
+             	width: 60px;
+             }
+             button:nth-child(1)
+             {
+             	margin-left: 100px;
+             }
+             button:hover
+             {
+             	border: 1px solid green;
+             }
+             #ye2
+             {
+                 display: none;
+             }
+             .bt
+             {
+             	display:block;
+             }

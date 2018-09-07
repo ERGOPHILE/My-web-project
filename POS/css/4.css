@@ -1,0 +1,82 @@
+            *
+            {
+            	margin: 0;
+            	padding: 0;
+            }
+           
+            .sectioin_box1
+            {
+            margin: 0 auto;
+            margin-top: 60px;
+            width: 1000px;
+           	height:530px;
+           	display: flex;
+           	background-color: white;
+           	margin-bottom: 60px;
+            }
+           .section_right_box
+           {
+           	margin-top: -30px;
+           	width: 600px;
+           	height:380px;
+           	color: #707070;
+           }
+          .section_right_box  .section_right_box1
+          {
+          	width: 600px;
+           	height:340px;
+           	margin-top: -50px;
+          }
+           .section_right_box  .section_right_box1 p
+           {
+           	margin-bottom: 10px;
+           	font-size: 10px;
+           }
+             .section_right_box  .section_right_box1 hr
+             {
+             	border: 0.4px  dashed #707070;
+             	margin-bottom: 10px;
+             }
+              .section_right_box  .section_right_box2
+          {
+          	width: 600px;
+           	height:340px;
+           	margin-top: -50px;
+          }
+           .section_right_box  .section_right_box2 p
+           {
+           	margin-bottom: 10px;
+           	font-size: 10px;
+           }
+             .section_right_box  .section_right_box2 hr
+             {
+             	border: 0.4px  dashed #707070;
+             	margin-bottom: 10px;
+             }
+             .sectioin_right_yeshu
+             {
+             	margin: 0 auto;
+             	display: flex;
+             }
+             button
+             {
+                margin-left: 10px;
+             	border-radius: 10px 10px 10px 10px;
+             	width: 60px;
+             }
+             button:nth-child(1)
+             {
+             	margin-left: 100px;
+             }
+             button:hover
+             {
+             	border: 1px solid green;
+             }
+             #ye2
+             {
+                 display: none;
+             }
+             .bt
+             {
+             	display:block;
+             }

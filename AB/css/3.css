@@ -1,0 +1,106 @@
+    section
+    {
+        width:1400px;
+        height:430px;
+        background-color:#f0f1f1;
+    padding:20px;
+        
+    } 
+    section .p1
+    {
+        color:#4eb800;
+    }
+    section h1
+    {
+        color:#4eb800;
+    }
+    section .p3
+    {
+        color:#4eb800;
+        
+    }
+    section .section_box2
+    {
+        width:590px;
+        height:215px;
+        display:flex;
+    }
+     section .section_box2 div
+    {
+        width:280px;
+        height:215px;
+        margin-right:50px;
+    }
+     section .section_box2 .section_box2_1 div
+     {
+         width:280px;
+         height:182px;
+         background-image:url(../img/AB_6.png);
+         background-size:280px 182px;
+     }
+            section .section_box2 .section_box2_1 span
+         {
+             width:240px;
+             height:35px;
+             background-color:#4eb800;
+             display:block;
+             line-height:35px;
+             color:white;
+             padding:0 20px ;
+             opacity:0.4;
+             transition:all 1s;
+         }
+         section .section_box2 .section_box2_1:hover span
+         {
+             opacity:1;
+  
+          }
+         section .section_box2 .section_box2_2 div
+     {
+         width:280px;
+         height:182px;
+         background-image: url(../img/AB_7.png);
+         background-size:280px 182px;
+     }
+            section .section_box2 .section_box2_2 span
+         {
+             width:240px;
+             height:35px;
+             background-color:#4eb800;
+             display:block;
+             line-height:35px;
+             color:white;
+             padding:0 20px ;
+             opacity:0.4;
+             transition:all 1s;
+         }
+            section .section_box2 .section_box2_2:hover span
+         {
+             opacity:1;
+  
+          }
+         section .section_box3 
+         {
+             width:1213px;
+             height:44px; 
+             margin-top:30px; 
+             border-bottom:1px solid #dddddd;
+             border-top:1px solid #dddddd;
+             line-height:44px;
+             transition:all 2s;
+         } 
+          section .section_box3:hover
+          {
+             border-bottom:1px solid  #0FF;
+             border-top:1px solid  #CF0;
+          
+          }
+          section .section_box3  a
+          {
+              color:#666666;
+          }
+            section .section_box3:hover  a
+          {
+                 color: #39F;
+          }
+        

@@ -1,0 +1,137 @@
+*
+{
+	margin: 0 ;
+	padding: 0;
+}
+ a
+ {
+	 text-decoration:none;
+ }
+ul 
+{ 
+   list-style:none;
+}
+header
+{
+	 width: 1400px;
+	 height:340px;
+	 /* background-image:url(../img/header_bj.png); 这种写法不支持no-repeat */
+	 background: url(../img/header_bj.png) no-repeat;
+	 color:white;
+}
+header ul 
+{ 
+  display:flex;
+}
+header .box1
+{
+	width:1400px;
+	height:80px;
+	display:flex;
+	position:relative;  
+}
+header .box1  .box1_left
+{ 
+    width:140px;
+	height:50px;
+	position:absolute;
+	color:white;
+	line-height:80px;
+	left:118px;
+}
+header .box1  .box1_right
+{ 
+    width:580px;
+	height:50px;
+	position:absolute;
+	line-height:80px;
+	left:524px;
+	position:relative;
+}
+header .box1  .box1_right ul li span
+{
+	width:60px;
+	height:1px;
+	background-color:white;
+	display:block;
+	transition:all 1s;
+	transform-origin:center;
+	transform:scaleX(0);
+}
+header .box1  .box1_right ul li .span_a
+{
+	position:absolute;	
+	left:40px;
+	top:60px;
+}
+header .box1  .box1_right ul li .span_b
+{
+	position:absolute;
+	left:122px;
+	top:60px;
+
+}
+header .box1  .box1_right ul li .span_c
+{
+	position:absolute;
+	left:210px;
+	top:60px;
+	
+}
+header .box1  .box1_right ul li .span_d
+{
+	position:absolute;
+	left:293px;
+	top:60px;
+	
+}
+header .box1  .box1_right ul li .span_e
+{
+	position:absolute;
+	left:380px;
+	top:60px;
+	
+}
+header .box1  .box1_right ul li .span_f
+{
+	position:absolute;
+	left:470px;
+	top:60px;
+	
+}
+header .box1  .box1_right ul li:hover span
+{
+   transform:scaleX(1);	
+}
+ header .box1  .box1_right ul li a
+ {
+   margin-left:54px;
+   	color:white;
+ }
+ header .box1 .p_r
+ {
+	  width:120px;
+	  height:43px;
+	  display:block;
+	  text-align:center;
+	  line-height:43px;
+	  margin-left:670px;
+	  background-color:#e80f32;
+  }
+ header .box2 
+ {
+	  width:460px;
+	  height:90px;
+	 margin-top:130px;
+	 margin-left:100px;
+ }
+  header .box2 h1
+  {
+	  font-size:70px;
+  }
+  header .box2  p
+  {
+	  display:block;
+	  margin-top:-38px;
+	  margin-left:280px;
+  }

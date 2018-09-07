@@ -1,0 +1,182 @@
+*
+{
+    margin:0;
+    padding: 0;
+    background-color:#f0f1f1;
+}
+ h1
+{
+    color:#3ea800;
+}
+section
+{
+    width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+}
+section .section_box2
+{
+    background:url("../img/AB_33.png") center ;
+    width:  1200px;
+    height: 653px;
+    position: relative;
+}
+section .section_box2  .section_box2_1
+{  
+    position: absolute;
+    width: 800px;
+    height: 400px;
+    background-color:#eee;
+    top: 100px;
+    left:205px;
+    z-index: 999;
+    border-radius: 5px;
+}
+section .section_box2 
+.span1
+{
+    position:absolute;
+    width: 200px;
+    height: 10px;
+    display: block;
+    top:485px;
+    left:208px;  
+    box-shadow:35px 14px 10px #3f0804;
+    transform: rotate(-3deg);
+    z-index: 111;
+}
+section .section_box2 
+.span2
+{
+    position:absolute;
+    width: 200px;
+    height: 10px;
+    display: block;
+    top:483px;
+    left:740px;
+    box-shadow:0px 14px 10px #3f0804;
+    transform: rotate(3deg);
+    z-index: 111;
+}
+
+section  .section_box2_1  .pp
+{
+    display: flex;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+section  .section_box2_1 .spana
+{
+    display: block;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height:20px;
+    color:white;
+    background-color:#415ec5
+}
+section  .section_box2_1 .spanb
+{
+   display: block;
+   columns: #666666;
+   margin-left: 6px;
+}
+  section .section_box_a 
+{
+    width: 800px;
+    height: 211px;
+    background-color: #e8e8e8;
+    justify-content:space-between;
+    display: flex; 
+    margin-top:80px;
+   
+   
+}
+section   .section_box_a  .section_box_a1
+{
+     width: 390px;
+     height:211px;
+     background-color:#e9e9e9;
+     text-align: center;
+     box-shadow: 10px 10px 20px #dedede; 
+}
+section   .section_box_a  .section_box_a1 img
+{
+    margin-top: 15px;
+    background-color:#e9e9e9;
+}
+section   .section_box_a  .section_box_a1 .boxa1_p1
+{
+   margin-top: 30px;
+   margin-left: 30px;
+   font-size: 25px;
+   color:#8f0000;
+   display: block;
+   width:300px;
+   background-color:#e9e9e9;
+   
+}
+section   .section_box_a  .section_box_a1 .boxa1_p2
+{
+   margin-top:10px;
+   margin-left: 60px;
+   color:#8f0000;
+   display: block;
+   background-color:#e9e9e9;
+   width:100px;
+}
+section   .section_box_a  .section_box_a2
+{
+     width: 390px;
+     height:211px;
+     background-color:#e9e9e9;
+     padding-left: 40px;
+     color:#616161;
+     box-shadow: -10px 10px 20px #dedede; 
+}
+section   .section_box_a  .section_box_a2 form
+{
+    background-color:#e9e9e9;
+}
+section   .section_box_a  .section_box_a2 table
+{
+    background-color:#e9e9e9;
+}
+section   .section_box_a  .section_box_a2 td
+{
+    background-color:#e9e9e9;
+}
+section   .section_box_a  .section_box_a2 p
+{
+    background-color:#e9e9e9;
+}
+section   .section_box_a  .section_box_a2  table tr .tt
+{
+   width:200px;
+   height:30px;
+   margin-left: 10px;
+   border:  1px solid #9ba1b1;
+   background-color:white;
+}
+section   .section_box_a  .section_box_a2  table tr .dd
+{
+   width:100px;
+   height:30px;
+   margin-left: 10px;
+   border:  1px solid #9ba1b1;
+   background-color:white;
+}
+section   .section_box_a  .section_box_a2  table tr .ss
+{
+   width:100px;
+   height:30px;
+   margin-left: 10px;
+   border-radius: 5px;
+   border: 1px solid #ab6045;
+   background: url("../img/AB_33.png");
+   color:white;
+}
+
+    
