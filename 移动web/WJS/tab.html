@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- meta 描述网页元信息 -->
+    <!-- 设置网页字符集 -->
+    <meta charset="utf-8">
+    <!--  如果是ie浏览器 使用最近ie引擎来解析页面  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置移动端视口  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 基本模板</title>
+    <!-- Bootstrap引入样式文件  -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+   
+    @font-face {
+    font-family: 'wjs-icon-font';
+    src: url('/font/MiFie-Web-Font.eot');
+    src: url('/font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'),
+    url('/font/MiFie-Web-Font.woff') format('woff'),
+    url('/font/MiFie-Web-Font.ttf') format('truetype'),
+    url('./font/MiFie-Web-Font.svg#iconfont') format('svg');
+  }
+.wjs-icon-news1::before {
+    content:"\e90e";
+    font-family: "wjs-icon-font";
+    font-size: 30px;
+    color:white;
+}
+.wjs-icon-news2::before {
+    content:"\e90f";
+    font-family: "wjs-icon-font";
+    font-size: 30px;    
+    color:white;    
+}
+.wjs-icon-news3::before {
+    content:"\e910";
+    font-family: "wjs-icon-font";
+    font-size: 30px;   
+    color:white;     
+}
+.wjs-icon-news4::before {
+    content:"\e911";
+    font-family: "wjs-icon-font";
+    font-size: 30px; 
+    color:white;       
+}
+    
+
+.news-tabs > li {
+  float: left;
+  margin-bottom: 60px;
+}
+.news-tabs > li::after{
+  content: '';
+  border-left: 1px dashed red;
+  width: 1px;
+  height:60px;
+  top:60px;
+  display: block;
+  left:30px;
+  position: absolute;
+}
+.news-tabs > li:last-child:after{
+    border: none;
+}
+.news-tabs > li > a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.news-tabs > li > a:hover {
+    background-color: #e92322; 
+}
+.news-tabs > li.active > a,
+.news-tabs > li.active > a:hover,
+.news-tabs > li.active > a:focus {
+  background-color: #e92322;
+}
+
+@media screen and (max-width:767px){
+    .news-tabs > li {
+        width: 25%;
+    }
+    .news-tabs > li > a {
+     margin:  10px auto;
+   }
+   .news-tabs > li::after{
+       border:none;
+   }
+}
+  </style>
+</head>
+
+<body>
+
+        <!-- Nav tabs -->
+    
+        <ul class="nav news-tabs col-lg-1" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#tab1" aria-controls="home" role="tab" data-toggle="tab"><span class="wjs-icon-news1"></span></a>
+            </li>
+            <li role="presentation" class=" ">
+                <a href="#tab2" aria-controls="profile" role="tab" data-toggle="tab"><span class="wjs-icon-news2"></a>
+            </li>
+            <li role="presentation" class=" ">
+                <a href="#tab3" aria-controls="messages" role="tab" data-toggle="tab"><span class="wjs-icon-news3"></span></a>
+            </li>
+            <li role="presentation" class=" ">
+                <a href="#tab4" aria-controls="settings" role="tab" data-toggle="tab"><span class="wjs-icon-news4"></span></a>
+            </li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="tab1">1</div>
+            <div role="tabpanel" class="tab-pane" id="tab2">2</div>
+            <div role="tabpanel" class="tab-pane" id="tab3">3</div>
+            <div role="tabpanel" class="tab-pane" id="tab4">4</div>
+        </div>
+
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="lib/jquery/jquery-1.12.4.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入自己插件 -->
+    <script src="js/index.js"></script>
+</body>
+
+</html>

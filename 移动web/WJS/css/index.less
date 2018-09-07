@@ -1,0 +1,532 @@
+
+//常用颜色
+@color:#e92322;
+body,a{
+    color: #888;
+    text-decoration: none;   
+    box-sizing: border-box;
+    
+}
+body{
+    height: 1600px;
+}
+a:hover{
+    color: #888;    
+    text-decoration: none;  
+    box-sizing: border-box;
+      
+}
+//头部
+header{
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 40px;
+    .container{
+        height: 100%;
+         line-height: 40px;
+        .app img{
+             z-index: 999;
+             position: fixed;            
+             display: none;   
+            top:31px;
+            left:140px;
+        }
+        .app:hover img{
+            display:inline-block;   
+        }
+        div{
+                height: 100%;
+                border-right: 1px solid #ccc;
+            }
+            div:last-child{
+                border: none;
+            }
+           .btn-danger{
+                width: 70px;
+                height: 30px;
+                text-align: center;
+                font-size: 12px;
+            }
+    }
+    
+}
+//导航栏
+ .nav-default {
+    background-color: white;
+    margin-bottom: 17px;
+  }
+  .nav-default .navbar-brand {
+    color: #777;
+    height:80px;    
+    line-height: 50px;
+    
+  }
+  .nav-default .navbar-brand:hover,
+  .nav-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+  }
+  .nav-default .navbar-text {
+    color: #777;
+  }
+  .nav-default .navbar-nav > li > a {
+    color: #777;
+    height:80px;
+    line-height: 50px;
+  }
+  .nav-default .navbar-nav > li > a:hover,
+  .nav-default .navbar-nav > li > a:focus {
+    border-bottom: 3px solid red;
+    color:#555 ;
+    background-color: transparent;
+  }
+  .nav-default .navbar-nav > .active > a,
+  .nav-default .navbar-nav > .active > a:hover,
+  .nav-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7;
+  }
+  .nav-default .navbar-nav > .disabled > a,
+  .nav-default .navbar-nav > .disabled > a:hover,
+  .nav-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent;
+  }
+  .nav-default .navbar-toggle {
+    border-color: #ddd;
+    margin-top:22px;
+  }
+  .nav-default .navbar-toggle:hover,
+  .nav-default .navbar-toggle:focus {
+    background-color: #ddd;
+  }
+  .nav-default .navbar-toggle .icon-bar {
+    background-color: #888;
+  }
+
+//轮播图
+.slide{
+      margin-top: -18px;
+        .pc-img {
+           
+            height: 410px;
+            background-position: center center;
+        }
+        .m-img{
+            width: 100%;       
+        }
+}
+
+//信息区域
+.wjs-info{
+    padding: 50px 100px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;  
+    .row{
+        a:hover:hover p,
+        a:hover:hover h4{
+                 color:red;          
+        }
+        a:hover .wjs_icon_info::before {
+            content: "\e903";
+            font-family: "wjs-icon-font";
+            color: red;
+            font-size: 36px;
+        }
+       h4,p{
+           color: #333;
+           margin-left: 10px;
+       }   
+       p{
+           padding: 5px 0;  
+           margin-bottom: 10px;        
+       }
+    }
+    
+}
+
+//预约
+.wjs-book{
+    width: 100%;
+    color: #333;  
+    height: 89px;
+    border-bottom: 1px solid #ccc; 
+    padding: 30px 0;
+    .book-left{
+        a{
+            color:red;
+            border-bottom: 1px dashed red;
+        }
+    } 
+    .book-right{
+        a{
+           color: #333; 
+                   
+        }
+    }
+    .book-right:hover a{
+        color:red;
+    }
+}
+
+// 平台app
+.wjs_product{
+    padding: 30px 0;
+.nav-tab {
+    border-bottom: 1px solid #ddd;
+  }
+  .nav-tab > li {
+    float: left;
+    margin-bottom: -1px;
+  }
+  .nav-tab > li > a {
+    color: #555;
+    margin-right: 2px;
+    line-height: 1.42857143;
+ 
+  }
+  .nav-tab > li > a:hover {
+    color:red;
+    border-bottom: 3px solid red;    
+  }
+  .nav-tab > li.active > a,
+  .nav-tab > li.active > a:hover,
+  .nav-tab > li.active > a:focus {
+    color: red;
+    cursor: default;
+    border-bottom: 3px solid red;
+  }
+  .tab-pane{
+          .row{
+              .content{  
+                     padding: 15px;           
+                    div{                 
+                        height: 150px;   
+                          div{
+                             height: 50px;
+                             p{
+                                 margin-bottom:2px;                               
+                             }   
+                          }                 
+                    }
+                    .tab-left{
+                        border-right:1.45px dashed rgb(5, 5, 65);
+                        background-color: pink; 
+                        overflow: hidden; 
+                        .logo {
+                            top:7px;
+                            left: 16px;
+                            position: absolute;
+                        }    
+                        h4{
+                            display: block;
+                            margin:15px 0 ;
+                            text-align: center;      
+                        }                                                             
+                    }
+                    .tab-right{  
+                        position: relative;
+                        padding: 40px 0 0 0;
+                        text-align: center;
+                        float: right;
+                        width: 80px;
+                        font-size: 17px;
+                        background-color: pink;
+                        
+                        span{
+                            font-size:30px;
+                        }
+                    }
+                    .tab-right::before,
+                    .tab-right::after{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        background-color:white;
+                        border-radius: 50%;
+                    }
+                    .tab-right::before{
+                        position: absolute;
+                        top:-10px;
+                        left: -10px;
+                    }
+                    .tab-right::after{
+                        position: absolute;
+                        top:auto;
+                        left: -10px;
+                        bottom: -10px;
+                    }
+               
+                }
+                .counnt {
+                 .tab-left{
+                        background-color: @color;
+                        color:white;                          
+                 }
+                 .tab-right{
+                    background-color: @color;
+                    color:white;                          
+             }
+                 .wjs_icon_experience::before {
+                    content: "\e915";
+                    font-family: "wjs-icon-font";   
+                    font-size:40px;  
+                    color:white;
+                      
+                }
+            }
+        }
+  }
+}
+
+//新闻
+.news{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
+    padding: 20px;
+    height: 478px;   
+    .container{
+        .news-xinw{
+             text-align: center;
+          border-bottom: 1px  solid #ccc;
+         }
+         .news-xinw::after{
+             content:"";
+             display:block;
+             width: 6px;
+             height: 6px;
+             border:1px solid #ccc;
+             position: absolute;
+             right:-6px;
+             bottom: -3px;
+             border-radius:50%;
+         }
+    }
+}
+.news-tabs > li {
+  float: left;
+  margin-bottom: 60px;
+}
+.news-tabs > li::after{
+  content: '';
+  border-left: 1px dashed red;
+  width: 1px;
+  height:60px;
+  top:60px;
+  display: block;
+  left:30px;
+  position: absolute;
+}
+.news-tabs > li:last-child:after{
+    border: none;
+}
+.news-tabs > li > a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.news-tabs > li > a:hover {
+    background-color: #e92322; 
+}
+.news-tabs > li.active > a,
+.news-tabs > li.active > a:hover,
+.news-tabs > li.active > a:focus {
+  background-color: #e92322;
+}
+ 
+.news-content {
+      ul{
+          list-style: none;
+          li{
+              margin-bottom: 20px;
+              &:hover{
+                  color: red;
+              }
+          }
+      }   
+}
+@media screen and (max-width:767px){
+    .news-tabs > li {
+        width: 25%;
+    }
+    .news-tabs > li > a {
+     margin:  10px auto;
+   }
+   .news-tabs > li::after{
+       border:none;
+   }
+}
+//底部
+.footer{
+    text-align: center;
+    ul{
+        list-style: none;
+        li{
+            display: inline-block;
+            margin: 10px 20px;
+        }
+        li:hover a{
+            color:red;
+        }
+    }
+}
+//字体图标的使用
+@font-face {
+    font-family: 'wjs-icon-font';
+    src: url('../font/MiFie-Web-Font.eot');
+    src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'),
+    url('../font/MiFie-Web-Font.woff') format('woff'),
+    url('../font/MiFie-Web-Font.ttf') format('truetype'),
+    url('../font/MiFie-Web-Font.svg#iconfont') format('svg');
+  }
+.wjs-icon-ipone::before {
+    content:"\e908";
+    font-family: "wjs-icon-font";
+}
+.wjs-icon-ipone1::before {
+    content:"\e909";
+    font-family: "wjs-icon-font";
+}
+.wjs-icon-logo1::before {
+    content:"\e920";
+    color:red;
+    font-size: 50px;
+    font-family: "wjs-icon-font";
+}
+.wjs-icon-logo2::before {
+    content:"\e93e";
+    color:black;
+    font-size: 30px;
+    font-family: "wjs-icon-font";
+}
+.wjs_icon_info::before {
+    content: "\e903";
+    font-family: "wjs-icon-font";
+    color: #333;
+    font-size: 36px;
+}
+.wjs_icon_clock::before {
+    content: "\e906";
+    font-size: 20px;
+    font-family: "wjs-icon-font"; 
+}
+.wjs_icon_video::before {
+    content: "\e905";
+    font-size: 20px;
+    margin-right:5px;    
+    font-family: "wjs-icon-font";       
+}
+.wjs_icon_news_01::before {
+    content: "\e90e";
+    font-size: 30px; 
+    font-family: "wjs-icon-font";       
+}
+.wjs_icon_news_02::before {
+    content: "\e90f";
+    font-size: 30px; 
+    font-family: "wjs-icon-font";          
+}
+.wjs_icon_news_03::before {
+    content: "\e910";
+    font-size: 30px;
+    font-family: "wjs-icon-font";        
+}
+.wjs_icon_news_04::before {
+    content: "\e911";
+    font-size: 30px; 
+    font-family: "wjs-icon-font";   
+}
+.wjs_icon_experience::before {
+    content: "\e915";
+    font-family: "wjs-icon-font";   
+    font-size:40px;  
+    color:rgb(56, 55, 55);    
+}
+.wjs-icon-news1::before {
+    content:"\e90e";
+    font-family: "wjs-icon-font";
+    font-size: 30px;
+    color:white;
+}
+.wjs-icon-news2::before {
+    content:"\e90f";
+    font-family: "wjs-icon-font";
+    font-size: 30px;    
+    color:white;    
+}
+.wjs-icon-news3::before {
+    content:"\e910";
+    font-family: "wjs-icon-font";
+    font-size: 30px;   
+    color:white;     
+}
+.wjs-icon-news4::before {
+    content:"\e911";
+    font-family: "wjs-icon-font";
+    font-size: 30px; 
+    color:white;       
+}
+.wjs_icon_partner01::before {
+    content: "\e946";
+    font-family: "wjs-icon-font";  
+    font-size:60px;  
+  }
+  
+  .wjs_icon_partner02::before {
+    content: "\e92f";
+    font-family: "wjs-icon-font";  
+    font-size:60px;        
+  }
+  
+  .wjs_icon_partner03::before {
+    content: "\e92e";
+    font-family: "wjs-icon-font"; 
+    font-size:60px;         
+  }
+  
+  .wjs_icon_partner04::before {
+    content: "\e92a";
+    font-family: "wjs-icon-font"; 
+    font-size:60px;         
+  }
+  .wjs_icon_partner05::before {
+    content: "\e929";
+    font-family: "wjs-icon-font"; 
+    font-size:60px;         
+  }
+  
+  .wjs_icon_partner06::before {
+    content: "\e931";
+    font-family: "wjs-icon-font"; 
+    font-size:60px;         
+  }
+  
+  .wjs_icon_partner07::before {
+    content: "\e92c";
+    font-family: "wjs-icon-font";
+    font-size:60px;          
+  }
+  
+  .wjs_icon_partner08::before {
+    content: "\e92b";
+    font-family: "wjs-icon-font"; 
+    font-size:60px;         
+  }
+  
+  .wjs_icon_partner09::before {
+    content: "\e92d";
+    font-family: "wjs-icon-font"; 
+    font-size:60px;         
+  }
+//字体图标结束
+
+
+
+
+
+
+

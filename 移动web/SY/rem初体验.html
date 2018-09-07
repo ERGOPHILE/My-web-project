@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" style="font-size: 100px">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+         .box{
+             width: 8rem;
+             height: 4rem;
+             border: .01rem solid red;
+         }
+         .box1{
+             margin:0.2rem auto;
+             width: 4rem;
+             height: 2rem;
+             border: .01rem solid pink;
+             font-size: 0.4rem;
+         }
+    </style>
+</head>
+<body>
+    <div class="box">
+         <div class="box1">
+                   777
+         </div>
+    </div>
+    <script>
+    
+       window.addEventListener(("resize"),function(){
+            var width = document.body.offsetWidth;
+            if(width >640){
+                 width = 640;
+            }else{
+                width = 320;
+            }
+            document.querySelector('html').style.fontSize  = width/640*100 +"px";       
+       }); 
+    </script>
+</body>
+</html>

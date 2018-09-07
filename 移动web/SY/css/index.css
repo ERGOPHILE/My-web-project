@@ -1,0 +1,94 @@
+body {
+  background-color: #ccc;
+}
+.box {
+  width: 100%;
+  min-width: 320px;
+  max-width: 750px;
+  margin: auto;
+  padding: .8rem  0;
+}
+.box .header {
+  min-width: 320px;
+  max-width: 750px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: .8rem;
+  top: 0;
+  background-color: skyblue;
+}
+.box .header a {
+  width: .8rem;
+  height: .8rem;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.box .header .left {
+  float: left;
+  background-image: url("../images/icon_category.png");
+  background-size: 70% 70%;
+}
+.box .header .right {
+  float: right;
+  background-image: url("../images/icon_cart.png");
+  background-size: 70% 70%;
+}
+.box .header .input {
+  height: .8rem;
+  overflow: hidden;
+  padding-top: 0.15rem;
+}
+.box .header .input input {
+  padding-left: 0.2rem;
+  height: 0.5rem;
+  width: 100%;
+  border-radius: 7px;
+}
+.box .bann {
+  height: 3.2rem;
+}
+.box .bann img {
+  height: 3.2rem;
+}
+.box .nav {
+  padding: 10px;
+  width: 100%;
+  height: 3.02rem;
+  padding: .10rem;
+  background-color: #7ffffd;
+}
+.box .nav li {
+  float: left;
+  width: 1.46rem;
+  height: 1.41rem;
+  padding: .15rem 0 ;
+  text-align: center;
+}
+.box .nav li img {
+  width: .8rem;
+  height: .8rem;
+}
+.box .footer {
+  width: 100%;
+  max-width: 750px;
+  min-width: 320px;
+  height: 1rem;
+  position: fixed;
+  bottom: 0;
+  margin: 0 auto;
+  padding-top: 0.25rem;
+  background-color: #fff;
+}
+.box .footer li {
+  width: 1.5rem;
+  height: 0.54rem;
+  list-style: none;
+  float: left;
+  text-align: center;
+}
+.box .footer li img {
+  width: 0.5rem;
+  height: 0.5rem;
+}

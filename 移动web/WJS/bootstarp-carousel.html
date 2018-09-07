@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- meta 描述网页元信息 -->
+    <!-- 设置网页字符集 -->
+    <meta charset="utf-8">
+    <!--  如果是ie浏览器 使用最近ie引擎来解析页面  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 设置移动端视口  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 基本模板</title>
+    <!-- Bootstrap引入样式文件  -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <style>
+   
+    @font-face {
+    font-family: 'wjs-icon-font';
+    src: url('/font/MiFie-Web-Font.eot');
+    src: url('/font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'),
+    url('/font/MiFie-Web-Font.woff') format('woff'),
+    url('/font/MiFie-Web-Font.ttf') format('truetype'),
+    url('./font/MiFie-Web-Font.svg#iconfont') format('svg');
+  }
+.wjs-icon-news1::before {
+    content:"\e90e";
+    font-family: "wjs-icon-font";
+    font-size: 30px;
+    color:white;
+}
+.wjs-icon-news2::before {
+    content:"\e90f";
+    font-family: "wjs-icon-font";
+    font-size: 30px;    
+    color:white;    
+}
+.wjs-icon-news3::before {
+    content:"\e910";
+    font-family: "wjs-icon-font";
+    font-size: 30px;   
+    color:white;     
+}
+.wjs-icon-news4::before {
+    content:"\e911";
+    font-family: "wjs-icon-font";
+    font-size: 30px; 
+    color:white;       
+}
+    
+
+.news-tabs > li {
+  float: left;
+  margin-bottom: 60px;
+}
+.news-tabs > li::after{
+  content: '';
+  border-left: 1px dashed red;
+  width: 1px;
+  height:60px;
+  top:60px;
+  display: block;
+  left:30px;
+  position: absolute;
+}
+.news-tabs > li:last-child:after{
+    border: none;
+}
+.news-tabs > li > a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+.news-tabs > li > a:hover {
+    background-color: #e92322; 
+}
+.news-tabs > li.active > a,
+.news-tabs > li.active > a:hover,
+.news-tabs > li.active > a:focus {
+  background-color: #e92322;
+}
+
+@media screen and (max-width:767px){
+    .news-tabs > li {
+        width: 25%;
+    }
+    .news-tabs > li > a {
+     margin:  10px auto;
+   }
+   .news-tabs > li::after{
+       border:none;
+   }
+}
+  </style>
+</head>
+
+<body>
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- 小圆点 -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                  <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <div class="pc-img hidden-xs" style="background-image: url(./images/slide_01_2000x410.jpg)"></div>
+                    <img class="m-img visible-xs" src="images/slide_01_640x340.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <div class="pc-img hidden-xs" style="background-image: url(./images/slide_02_2000x410.jpg)"></div>
+                    <img class="m-img visible-xs" src="images/slide_02_640x340.jpg">
+                  </div>
+                  <div class="item">
+                    <div class="pc-img hidden-xs" style="background-image: url(./images/slide_03_2000x410.jpg)"></div>
+                    <img class="m-img visible-xs" src="images/slide_03_640x340.jpg" alt="">
+                  </div>
+                  <div class="item">
+                    <div class="pc-img hidden-xs" style="background-image: url(./images/slide_04_2000x410.jpg)"></div>
+                    <img class="m-img visible-xs" src="images/slide_04_640x340.jpg" alt="">
+                  </div>
+            
+                </div>
+            
+                <!-- 左右箭头 -->
+                <!--  herf 和 data-target  在框架中 都可以指向要控制目标元素   -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+           
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="lib/jquery/jquery-1.12.4.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <!-- 引入自己插件 -->
+    <script src="js/index.js"></script>
+    <script>
+         //我们可以引用插件bootstarp的方法carousel(旋转木马)方法
+        /*
+         1  .carousel(options)初始化旋转木马与一个可选选项对象,并开始循环通过项目。
+            //设置轮播图切换时间 
+            $('.carousel').carousel({
+        interval: 3000 //设置定时器切换时间
+          })
+          2. .carousel('cycle')循环  从左到右循环。
+          3. .carousel('pause')暂停；间歇 阻止旋转木马穿过物品。
+          4. .carousel(number) 数  将旋转木马循环到特定的框架(以0为基础,类似于数组)。
+          5. .carousel('prev') 上一个
+          6. .carousel('next')下一个
+
+        */
+             //定义手指的初始位置坐标
+             //手指开始点击的位置
+             var startX = 0;
+             //手指移动的位置
+             var moveX = 0;
+             //手指移动结束的位置
+             
+             var x = 0;
+               //触屏点击     
+               $('.carousel').carousel({
+                  interval: 3000 //设置定时器切换时间
+               })
+            $(".carousel").on("touchstart",function(e){
+               //e --->是jq的事件对象
+              //jq对象中  e.originalEvent 属性中存放的是原生DOM是事件对象   
+                $("carousel").carousel('pause');                        
+                   startX = e.originalEvent.targetTouches[0].clientX;  
+                   console.log(startX);
+                   
+              //暂停轮播图
+               });
+            //触屏移动
+            $(".carousel").on("touchmove",function(e){
+                  moveX = e.originalEvent.targetTouches[0].clientX;
+                  //手指移动的距离
+                  x = moveX - startX;
+                console.log(x);
+                  
+                });
+            //触屏结束
+            $(".carousel").on("touchend",function(){
+
+                   if(x>0){
+                   
+                        $(this).carousel('prev');
+                   }
+                   if(x<0){
+                
+                    $(this).carousel('next');
+                 
+                    
+                   }
+                //轮播图继续自动轮播
+             $('.carousel').carousel('cycle')
+              //数据重置             
+              startX = 0;
+              moveX = 0;
+              distanceX = 0;
+            });
+           
+     </script>
+</body>
+
+</html>
